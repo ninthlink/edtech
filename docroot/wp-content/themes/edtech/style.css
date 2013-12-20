@@ -1,0 +1,237 @@
+/*
+ Theme Name:     EdTech
+ Description:    Custom theme based on Omega
+ Template:       omega
+ Version:        1.0.0
+*/
+
+@import url("fonts.css");
+@import url("../omega/style.css");
+
+/* =overrider top level omega styles
+-------------------------------------------------------------- */
+.wrap {
+  position: relative;
+  width: 940px;
+}
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #585143;
+  background: #f2f1ee;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Archer-Bold";
+  color: #585143;
+}
+h1 {
+  font-size: 28px;
+}
+
+/*
+Header
+---------------------------------------------------------------------------------------------------- */
+#header {
+  background: #fff;
+  border-bottom: 2px solid #2f75be;
+  height: 110px;
+}
+#header .logo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+#header .logo a {
+  height: 82px;
+  width: 181px;
+  display: block;
+  background: url(logo.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+.nav-primary {
+  position: absolute;
+  top: 60px;
+  left: 305px;
+}
+.nav-primary .wrap {
+  width: auto;
+  margin: 0;
+}
+.omega-nav-menu,
+.omega-nav-menu > ul {
+  letter-spacing: 0;
+}
+.omega-nav-menu .menu-item,
+.omega-nav-menu .page_item {
+  font-size: 12px;
+  border-right: 1px solid #bbb;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.omega-nav-menu .menu-item-last.menu-item {
+  border-right: 0;
+}
+.omega-nav-menu a {
+  color: #585143;
+  padding: 0 35px;
+  height: 10px;
+  line-height: 10px;
+}
+
+/*
+Search
+---------------------------------------------------------------------------------------------------- */
+#header #search-2 {
+  position: absolute;
+  top: 58px;
+  right: 0px;
+  width: 122px;
+}
+#header #search-2 input.search-field {
+  border: 1px solid #bebebe;
+  font-size: 12px;
+  padding: 5px;
+}
+#header #search-2 input.search-submit {
+  clip: auto;
+  height: 14px;
+  width: 14px;
+  background: #fff url(images/icon-search.png) no-repeat center center;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 7px;
+  right: 5px;
+}
+
+/*
+Top Header Menu
+---------------------------------------------------------------------------------------------------- */
+#header #nav_menu-2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#header #nav_menu-2 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid #d8d8d9;
+  border-width: 0 0 1px 1px;
+  display: inline-block;
+}
+#header #nav_menu-2 ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  border-right: 1px solid #d8d8d9;
+  float: left;
+}
+#header #nav_menu-2 ul li a {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  color: #585143;
+  padding: 0 25px 0 35px;
+  background: #f9f7f4;
+}
+
+#header #nav_menu-2 ul li.link-security a {
+  background: url(images/icon-top-header.png) no-repeat 15px -26px;
+}
+#header #nav_menu-2 ul li.link-contact a {
+  color: #585143;
+  padding: 0 25px 0 35px;
+  background: url(images/icon-top-header.png) no-repeat 15px 0;
+}
+#header #nav_menu-2 ul li.link-online-banking a {
+  color: #fff;
+  padding: 0 15px;
+  background: #5ba8fe; /* Old browsers */
+  background: -moz-linear-gradient(top,  #5ba8fe 0%, #308fe2 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top,  #5ba8fe 0%,#308fe2 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom,  #5ba8fe 0%,#308fe2 100%); /* W3C */
+}
+#header #nav_menu-2 ul li.link-become-member a {
+  color: #444;
+  padding: 0 15px;
+  background: #d0dc3c;
+}
+
+
+/*
+Top Header Menu
+---------------------------------------------------------------------------------------------------- */
+#footer-top {
+  background: #309dff;
+  padding: 30px 0 50px;
+  color: #fff;
+  font-size: 13px;
+}
+#footer-top h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer-hours {
+  width: 23%;
+  margin: 0 3% 0 0;
+  float: left;
+}
+.footer-directions {
+  padding: 40px 0 0;
+}
+.footer-security {
+  width: 24%;
+  margin: 0 3% 0 0;
+  float: left;
+}
+.footer-posts {
+  width: 24%;
+  margin: 0 3% 0 0;
+  float: left;
+}
+.footer-social {
+  width: 20%;
+  float: left;
+}
+
+#footer-top a,
+#footer-bottom a {
+  color: #fff;
+}
+#footer-bottom {
+  background: #1376cc;
+  padding: 30px 0 40px;
+  color: #fff;
+  font-size: 12px;
+}
+.footer-copyright,
+.footer-address {
+  font-weight: bold;
+}
+ul.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.footer-menu li {
+  border-right: 1px solid #fff;
+  margin-right: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  line-height: 10px;
+}
+ul.footer-menu li.last {
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
+}

@@ -1,0 +1,40 @@
+@font-face {
+font-family: "Archer-Bold";
+src: url("fonts/Archer-Bold.otf");
+}
+@font-face {
+font-family: "Archer-Bold-Italic";
+src: url("fonts/Archer-BoldItal.otf");
+}
+@font-face {
+font-family: "Archer-Book";
+src: url("fonts/Archer-Book.otf");
+}
+@font-face {
+font-family: "Archer-Book-Italic";
+src: url("fonts/Archer-BookItal.otf");
+}
+@font-face {
+font-family: "Archer-Light";
+src: url("fonts/Archer-Light.otf");
+}
+@font-face {
+font-family: "Archer-Light-Italic";
+src: url("fonts/Archer-LightItal.otf");
+}
+@font-face {
+font-family: "Archer-Medium";
+src: url("fonts/Archer-Medium.otf");
+}
+@font-face {
+font-family: "Archer-Medium-Italic";
+src: url("fonts/Archer-MediumItal.otf");
+}
+@font-face {
+font-family: "Archer-Semi-Bold-Italic";
+src: url("fonts/Archer-SembdItal.otf");
+}
+@font-face {
+font-family: "Archer-Semi-Bold";
+src: url("fonts/Archer-Semibold.otf");
+}
