@@ -29,6 +29,24 @@ register_sidebar(array(
   'after_title' => '</h3>'
 ));
 register_sidebar(array(
+  'name' => 'Preface',
+  'id' => 'preface',
+  'description' => 'About the content',
+  'before_widget' => '<div id="%1$s" class="widget %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>'
+));
+register_sidebar(array(
+  'name' => 'Postscript',
+  'id' => 'postscript',
+  'description' => 'Below the content',
+  'before_widget' => '<div id="%1$s" class="widget %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>'
+));
+register_sidebar(array(
   'name' => 'Footer Top',
   'id' => 'footer-top',
   'description' => 'footer top.',
