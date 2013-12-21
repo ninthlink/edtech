@@ -80,7 +80,6 @@ Site Navigation
   background: #fff;
   border: 1px solid #bbb;
   border-width: 0 1px;
-  left: -1px;
 }
 .main-menu ul.dropdown li li {
   border-right: 0;
@@ -91,6 +90,9 @@ Site Navigation
   height: auto;
   line-height: 120%;
   display: block;
+}
+.main-menu ul.dropdown li li ul {
+  left: auto;
 }
 
 /*
