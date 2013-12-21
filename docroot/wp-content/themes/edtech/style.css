@@ -12,7 +12,7 @@
 -------------------------------------------------------------- */
 .wrap {
   position: relative;
-  width: 940px;
+  max-width: 940px;
 }
 
 body {
@@ -54,35 +54,43 @@ Header
 
 /*
 Site Navigation
----------------------------------------------------------------------------------------------------- */
-.nav-primary {
+----------------------------------------------------------------------------------------------------*/
+.main-menu {
   position: absolute;
-  top: 60px;
+  top: 68px;
   left: 305px;
 }
-.nav-primary .wrap {
-  width: auto;
-  margin: 0;
-}
-.omega-nav-menu,
-.omega-nav-menu > ul {
-  letter-spacing: 0;
-}
-.omega-nav-menu .menu-item,
-.omega-nav-menu .page_item {
+.main-menu ul.dropdown li {
   font-size: 12px;
   border-right: 1px solid #bbb;
   text-transform: uppercase;
   font-weight: bold;
 }
-.omega-nav-menu .menu-item-last.menu-item {
+.main-menu ul.dropdown li.menu-item-last {
   border-right: 0;
 }
-.omega-nav-menu a {
+.main-menu ul.dropdown li a {
   color: #585143;
   padding: 0 35px;
   height: 10px;
   line-height: 10px;
+  display: block;
+}
+.main-menu ul.dropdown li ul {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-width: 0 1px;
+  left: -1px;
+}
+.main-menu ul.dropdown li li {
+  border-right: 0;
+  border-bottom: 1px solid #bbb;
+}
+.main-menu ul.dropdown li li a {
+  padding: 10px 35px;
+  height: auto;
+  line-height: 120%;
+  display: block;
 }
 
 /*

@@ -12,7 +12,7 @@
 
   <header id="header">
     <div class="wrap">
-      <?php omega_do_atomic( 'before_header' ); // omega_before_header ?>
+
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Header')) :
       endif; ?>
       <?php omega_do_atomic( 'after_header' ); // omega_after_header ?>
