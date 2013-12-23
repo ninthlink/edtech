@@ -18,15 +18,17 @@
       <?php omega_do_atomic( 'after_header' ); // omega_after_header ?>
     </div>
   </header>
+
+      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Subheader')) : ?>
   <div id="subheader">
     <div class="wrap">
-      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Subheader')) :
-      endif; ?>
     </div>
   </div>
+<?php endif; ?>
+
 
   <div id="content-top">
-    <div class="wrap">
+    <div class="wrap clearfix">
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Content Top')) :
       endif; ?>
     </div>

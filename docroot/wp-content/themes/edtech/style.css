@@ -14,6 +14,9 @@
   position: relative;
   max-width: 940px;
 }
+.site-inner {
+  padding-top: 45px;
+}
 
 body {
   font-family: arial, helvetica, sans-serif;
@@ -62,12 +65,12 @@ Site Navigation
 }
 .main-menu ul.dropdown li {
   font-size: 12px;
-  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
   text-transform: uppercase;
   font-weight: bold;
 }
-.main-menu ul.dropdown li.menu-item-last {
-  border-right: 0;
+.main-menu ul.dropdown li.first-child {
+  border-left: 0;
 }
 .main-menu ul.dropdown li a {
   color: #585143;
@@ -76,23 +79,24 @@ Site Navigation
   line-height: 10px;
   display: block;
 }
+.main-menu ul.dropdown li a:hover {
+  color: #000;
+}
 .main-menu ul.dropdown li ul {
   background: #fff;
   border: 1px solid #bbb;
   border-width: 0 1px;
 }
 .main-menu ul.dropdown li li {
-  border-right: 0;
+  border-left: 0;
   border-bottom: 1px solid #bbb;
+  text-transform: none;
 }
 .main-menu ul.dropdown li li a {
-  padding: 10px 35px;
+  padding: 8px 35px;
   height: auto;
   line-height: 120%;
   display: block;
-}
-.main-menu ul.dropdown li li ul {
-  left: auto;
 }
 
 /*
@@ -157,10 +161,17 @@ Top Header Menu
 #header #nav_menu-2 ul li.link-security a {
   background: url(images/icon-top-header.png) no-repeat 15px -26px;
 }
+#header #nav_menu-2 ul li.link-security a:hover {
+  background: #f2f1ee url(images/icon-top-header.png) no-repeat 15px -26px;
+}
 #header #nav_menu-2 ul li.link-contact a {
   color: #585143;
   padding: 0 25px 0 35px;
   background: url(images/icon-top-header.png) no-repeat 15px 0;
+}
+#header #nav_menu-2 ul li.link-contact a:hover {
+  color: #000;
+  background: #f2f1ee url(images/icon-top-header.png) no-repeat 15px 0;
 }
 #header #nav_menu-2 ul li.link-online-banking a {
   color: #fff;
@@ -170,10 +181,17 @@ Top Header Menu
   background: -webkit-linear-gradient(top,  #5ba8fe 0%,#308fe2 100%); /* Chrome10+,Safari5.1+ */
   background: linear-gradient(to bottom,  #5ba8fe 0%,#308fe2 100%); /* W3C */
 }
+#header #nav_menu-2 ul li.link-online-banking a:hover {
+  background: #5ba8fe;
+}
 #header #nav_menu-2 ul li.link-become-member a {
   color: #444;
   padding: 0 15px;
   background: #d0dc3c;
+}
+#header #nav_menu-2 ul li.link-become-member a:hover {
+  color: #000;
+  background: #b2bd27;
 }
 
 
@@ -244,4 +262,94 @@ ul.footer-menu li.last {
   border-right: 0;
   margin-right: 0;
   padding-right: 0;
+}
+
+
+
+/*
+Sidebar
+---------------------------------------------------------------------------------------------------- */
+.sidebar .widget {
+  margin: 0 0 20px;
+}
+
+.sidebar ul.menu {
+  border-top: 4px solid #52aefe;
+  font-family: "Archer-Bold";
+  background: #f8f8f8;
+}
+.sidebar ul.menu li {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+}
+.sidebar ul.menu li.last-child {
+  border-bottom: 0;
+}
+.sidebar ul.menu li a {
+  display: block;
+  padding: 20px 15px;
+  color: #52acfe;
+}
+.sidebar ul.menu li a:hover,
+.sidebar ul.menu li.current_page_item a {
+  color: #c2cc28;
+  background: #fff;
+}
+
+.sidebar ul.menu ul.sub-menu {
+  font-family: arial;
+  padding: 10px 0 15px;
+}
+.sidebar ul.menu li.current_page_item ul.sub-menu {
+  background: #fff;
+}
+.sidebar ul.menu li ul.sub-menu li {
+  text-transform: none;
+  font-size: 13px;
+  line-height: 13px;
+  border-bottom: 0;
+}
+.sidebar ul.menu li ul.sub-menu li a {
+  padding: 5px 15px;
+  color: #666;
+}
+.sidebar ul.menu li ul.sub-menu a:hover,
+.sidebar ul.menu li ul.sub-menu li.current_page_item a {
+  color: #000;
+  background: #fff;
+}
+
+
+/*
+Home
+---------------------------------------------------------------------------------------------------- */
+.home-low-rates,
+.home-membership,
+.home-loan {
+  float: left;
+  width: 30%;
+  max-width: 30%;
+  height: 250px;
+  padding: 10px 25px;
+}
+
+.home-low-rates {
+  background: #467fd0;
+  color: #fff;
+}
+.home-membership {
+  margin: 0 4%;
+  background: #c4ce2a;
+  color: #444;
+}
+.home-loan {
+  background: #1893ff;
+  color: #fff;
+}
+.home-low-rates h3,
+.home-loan h3 {
+  color: #fff;
 }
