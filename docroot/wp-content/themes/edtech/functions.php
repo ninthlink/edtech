@@ -11,9 +11,9 @@ register_sidebar(array(
   'after_title' => '</h3>'
 ));
 register_sidebar(array(
-  'name' => 'Subheader',
-  'id' => 'subheader',
-  'description' => 'subheader area',
+  'name' => 'Home Slides',
+  'id' => 'home-slides',
+  'description' => 'Area for homepage slides',
   'before_widget' => '<div id="%1$s" class="widget %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3>',
@@ -23,6 +23,15 @@ register_sidebar(array(
   'name' => 'Content Top',
   'id' => 'content-top',
   'description' => 'Content top area',
+  'before_widget' => '<div id="%1$s" class="widget %2$s">',
+  'after_widget' => '</div>',
+  'before_title' => '<h3>',
+  'after_title' => '</h3>'
+));
+register_sidebar(array(
+  'name' => 'Subheader',
+  'id' => 'subheader',
+  'description' => 'subheader area',
   'before_widget' => '<div id="%1$s" class="widget %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3>',
