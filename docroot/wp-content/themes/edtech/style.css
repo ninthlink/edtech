@@ -28,13 +28,27 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Archer-Bold";
   color: #585143;
+  margin: 0 0 10px;
 }
 h1,
 h1.entry-title {
   font-size: 28px;
 }
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+h4 {
+  font-size: 16px;
+}
 a {
   color: #170BB5;
+}
+.clear {
+  clear: both;
 }
 
 /*
@@ -129,11 +143,11 @@ Site Navigation
   border: 0;
   padding: 0 30px 0 10px;
   color: #898989;
-  background: url(images/arrow-gray.png) no-repeat 94% 50%;
+  background: url(images/arrow-menu.png) no-repeat 94% 50%;
 }
 .main-menu ul.dropdown li li a:hover {
   border: 0;
-  background: url(images/arrow-gray.png) no-repeat 94% 50%;
+  background: url(images/arrow-menu.png) no-repeat 94% 50%;
 }
 .main-menu ul.dropdown li ul ul {
   background: #f9f7f4;
@@ -449,6 +463,36 @@ Home
   max-width: 940px;
   margin: 0 auto;
 }
+body.home .block-online-banking {
+  background: none;
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+  max-width: 940px;
+}
+body.home .block-online-banking .widget-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 105px;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+  background: #2d22bb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #476de0 0%, #2d22bb 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top,  #476de0 0%,#2d22bb 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom,  #476de0 0%,#2d22bb 100%); /* W3C */
+}
+body.home .block-online-banking .widget-inner {
+  padding: 10px 30px 10px 15px;
+  background: url(images/icon-lock-white.png) no-repeat 95% 50%;
+  height: 105px;
+}
+body.home .block-online-banking h3 {
+  font-family: arial;
+  color: #dff0ff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
 /*
 Slides
@@ -679,6 +723,27 @@ body.home #content-top {
   text-transform: uppercase;
   margin: 0 0 5px;
 }
+.block-address  {
+  background: #fff;
+  border-top: 4px solid #3025bc;
+  padding: 20px;
+  color: #585143;
+}
+.block-address p {
+  margin: 0 0 5px;
+}
+.block-address h4 {
+  font-size: 16px;
+  color: #170bb5;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
+.block-address a {
+  color: #585143;
+  font-weight: bold;
+  background: url(images/arrow-gray.png) no-repeat 100% 50%;
+  padding-right: 10px;
+}
 
 
 /*
@@ -770,4 +835,151 @@ Content
 #content table td a {
   font-weight: bold;
   text-decoration: underline;
+}
+#content ul {
+  margin: 0 0 15px 16px;
+}
+#content .foot-note {
+  font-size: 12px;
+}
+
+.more-link {
+  font-weight: bold;
+}
+.more-link a {
+  display: inline-block;
+  background: url(images/arrow-blue.png) no-repeat 100% 50%;
+  padding-right: 10px;
+  line-height: 100%;
+}
+h3.icon-lock {
+  background: url(images/icon-lock.png) no-repeat;
+  padding-left: 25px;
+}
+
+.summary-box {
+  background: #fff;
+  padding: 20px 15px;
+  margin: 0 0 20px;
+  clear: both;
+}
+.summary-box h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #170BB5;
+}
+
+.button-link {
+  display: inline-block;
+  background: #2d22bb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #476de0 0%, #2c22bb 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top,  #476de0 0%,#2c22bb 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom,  #476de0 0%,#2c22bb 100%); /* W3C */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.button-link a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 30px 0 10px;
+  background: url(images/arrow-white.png) no-repeat 94% 50%;
+  color: #fff;
+}
+.button {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 30px 0 10px !important;
+  background: #2d22bb url(images/arrow-white.png) no-repeat 94% 50% !important;
+  color: #fff;
+}
+
+
+
+/*
+Become a member
+---------------------------------------------------------------------------------------------------- */
+body.become-a-member h1.entry-title {
+  padding-left: 40px;
+  background: url(images/icon-member.png) no-repeat;
+}
+.gform_heading .gform_title {
+  display: none;
+}
+.gform_wrapper ul li.gfield {
+  margin: 0 0 10px;
+}
+.gform_wrapper .top_label .gfield_label {
+  display: inline !important;
+}
+.gform_wrapper .gfield_required {
+  display: none;
+}
+.gform_wrapper textarea,
+.gform_wrapper select,
+.gform_wrapper input[type="text"],
+.gform_wrapper input[type="url"],
+.gform_wrapper input[type="email"],
+.gform_wrapper input[type="tel"],
+.gform_wrapper input[type="number"],
+.gform_wrapper input[type="password"] {
+  padding: 4px 10px;
+  border: 1px solid #d8d8d8;
+  border-color: #c0c0c0 #d8d8d8 #d8d8d8 #c0c0c0;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+form.form-become-member {
+  font-size: 12px;
+}
+form.form-become-member .gform_heading {
+  margin: 0 0 25px;
+}
+form.form-become-member .field-eligible .gfield_label,
+form.form-become-member .field-self-employed .gfield_label {
+  font-weight: normal;
+  margin: 0 15px 0 0;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+}
+form.form-become-member .field-prev-address .gfield_label {
+  font-weight: normal;
+}
+form.form-become-member .field-eligible .ginput_container,
+form.form-become-member .field-self-employed .ginput_container {
+  display: inline-block;
+}
+form.form-become-member .field-eligible ul.gfield_radio,
+form.form-become-member .field-self-employed ul.gfield_radio {
+  display: inline-block;
+  margin: 0 35px 0 0 !important;
+}
+form.form-become-member .field-eligible ul.gfield_radio li,
+form.form-become-member .field-self-employed ul.gfield_radio li {
+  display: inline-block;
+  margin: 0 5px 0 0 !important;
+}
+form.form-become-member .field-eligible ul.gfield_radio li input[type="radio"],
+form.form-become-member .field-self-employed ul.gfield_radio li input[type="radio"] {
+  display: inline-block;
+}
+form.form-become-member .field-eligible ul.gfield_radio li label,
+form.form-become-member .field-self-employed ul.gfield_radio li label {
+  margin: 0 0 0 20px;
+}
+form.form-become-member .field-eligible .gfield_description {
+  display: inline-block;
+  padding: 65px 0 0;
+  width: 110px;
+  background: url(images/icon-download-read.png) no-repeat top right;
+  height: 75px;
+  margin-top: -65px;
+}
+form.form-become-member input.datepicker {
+  width: 99.2% !important;
 }

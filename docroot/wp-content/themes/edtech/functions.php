@@ -14,8 +14,8 @@ register_sidebar(array(
   'name' => 'Home Slides',
   'id' => 'home-slides',
   'description' => 'Area for homepage slides',
-  'before_widget' => '<div id="%1$s" class="widget %2$s">',
-  'after_widget' => '</div>',
+  'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="widget-outer"><div class="widget-inner">',
+  'after_widget' => '</div></div></div>',
   'before_title' => '<h3>',
   'after_title' => '</h3>'
 ));
