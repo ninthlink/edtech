@@ -30,9 +30,7 @@
   </div>
 
   <div id="subheader">
-    <div class="wrap">
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Subheader')) : endif; ?>
-    </div>
   </div>
 
 
