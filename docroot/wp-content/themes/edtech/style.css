@@ -764,6 +764,9 @@ Subheader
   height: 75px;
   line-height: 75px;
 }
+#subheader .widget h3 a {
+  color: #fff;
+}
 
 .block-online-banking {
   background: #2d22bb; /* Old browsers */
@@ -804,7 +807,70 @@ Announcements
   font-size: 16px;
   margin: 0 0 10px;
 }
+.announcements-posts a,
+.announcements-categories a,
+.announcements-archives a {
+  color: #666;
+}
 
+article.post {}
+article.post h1.entry-title {
+  font-size: 24px;
+  color: #585143;
+  margin: 0;
+  line-height: 24px;
+}
+article.post h1.entry-title a {
+  color: #585143;
+}
+article.post .entry-header .entry-meta {
+  margin: 0 0 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+article.post .social-links {
+  border: 1px solid #d2d2d2;
+  border-width: 1px 0;
+  padding: 15px 10px;
+}
+article.post .social-links .label {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 10px 0 0;
+  float: left;
+}
+article.post .social-links a {
+  display: inline-block;
+  float: left;
+  margin-bottom: 0;
+}
+article.post .entry-footer {
+  display: none;
+}
+#comments,
+#respond {
+  background: none;
+}
+#respond input[type="email"],
+#respond input[type="text"],
+#respond input[type="url"],
+#respond textarea {
+  width: 99%;
+  padding: 4px 10px;
+  border: 1px solid #d8d8d8;
+  border-color: #c0c0c0 #d8d8d8 #d8d8d8 #c0c0c0;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+#respond p {
+  margin: 0 0 5px;
+}
+#respond p label {
+  font-size: 12px;
+}
 /*
 Content
 ---------------------------------------------------------------------------------------------------- */
@@ -887,7 +953,8 @@ h3.icon-lock {
   background: url(images/arrow-white.png) no-repeat 94% 50%;
   color: #fff;
 }
-.button {
+.button,
+#submit {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 13px;

@@ -40,7 +40,7 @@ register_sidebar(array(
 register_sidebar(array(
   'name' => 'Preface',
   'id' => 'preface',
-  'description' => 'About the content',
+  'description' => 'Above the content',
   'before_widget' => '<div id="%1$s" class="widget %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3>',

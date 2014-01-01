@@ -13,8 +13,9 @@
 get_header(); ?>
 
   <main  class="<?php echo omega_apply_atomic( 'main_class', 'content' );?>" <?php omega_attr( 'content' ); ?>>
-    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Preface')) :
-endif; ?>
+    <div id="preface">
+      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Preface')) : endif; ?>
+    </div>
     <?php
     omega_do_atomic( 'before_content' ); // omega_before_content
 
@@ -33,8 +34,7 @@ endif; ?>
 
     omega_do_atomic( 'after_content' ); // omega_after_content
     ?>
-    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Postscript')) :
-endif; ?>
+    <div id="postscript"><?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Postscript')) : endif; ?></div>
   </main><!-- .content -->
 
 <?php get_footer(); ?>
