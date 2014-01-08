@@ -1,0 +1,64 @@
+@import url("/wp-content/themes/edtech/fonts.css");
+@import url("/wp-content/themes/edtech/style.css");
+
+.lens-edtech-lens .slidedeck dd {
+  height: 438px;
+}
+.lens-edtech-lens .slide-outer {
+  position: relative;
+  height: 438px;
+}
+.lens-edtech-lens .slide-outer img {
+
+}
+.lens-edtech-lens .slide-inner {
+  position: relative;
+  max-width: 940px;
+  margin: -438px auto 0;
+  padding: 125px 0 0 30px;
+}
+.lens-edtech-lens .slide-header {
+  font-family: "Archer-Bold";
+  font-size: 32px;
+  color: #444;
+  margin: 0 0 5px;
+}
+.lens-edtech-lens .slide-subheader {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #4bd933;
+  margin: 0 0 5px;
+}
+.lens-edtech-lens .slide-text {
+  font-family: "Archer-Bold";
+  font-size: 21px;
+  width: 340px;
+  margin: 0 0 10px;
+  line-height: 26px;
+}
+.lens-edtech-lens .slide-text strong {
+  color: #170bb5;
+}
+.lens-edtech-lens .more-link a {
+  display: inline-block;
+  background: #170bb5 url(/wp-content/themes/edtech/images/arrow-white.png) no-repeat 94% 50%;
+  padding: 0 30px 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.lens-edtech-lens dd.slide_2 .slide-inner {
+  padding: 55px 0 0 560px;
+}
+.lens-edtech-lens dd.slide_2 .slide-text {
+  width: 360px;
+}
+.lens-edtech-lens dd.slide_3 .slide-inner {
+  padding: 80px 0 0 455px;
+}
+.lens-edtech-lens dd.slide_3 .slide-text {
+  width: 360px;
+}

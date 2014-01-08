@@ -6,16 +6,17 @@
 */
 
 @import url("fonts.css");
-@import url("../omega/style.css");
+@import url("style-omega.css");
 
 /* =overrider top level omega styles
 -------------------------------------------------------------- */
 .wrap {
   position: relative;
   max-width: 940px;
+  margin: 0 auto;
 }
 .site-inner {
-  padding-top: 45px;
+  padding: 45px 0 0;
 }
 
 body {
@@ -79,7 +80,8 @@ Site Navigation
 .main-menu {
   position: absolute;
   top: 68px;
-  left: 305px;
+  right: 170px;
+  z-index: 100;
 }
 .main-menu ul.dropdown li {
   font-size: 12px;
@@ -167,6 +169,7 @@ Search
   top: 58px;
   right: 0px;
   width: 122px;
+  z-index: 101;
 }
 #header #search-2 input.search-field {
   border: 1px solid #bebebe;
@@ -497,69 +500,56 @@ body.home .block-online-banking h3 {
 /*
 Slides
 ------------------------------------------------------------------ */
-.lens-tool-kit.sd2-frame {
-  border-radius: 0 !important;
-  box-shadow: none !important;
+body.home .slidedeck2_widget {
+  position: relative;
+  max-width: 1290px;
   margin: 0 auto;
 }
-.lens-tool-kit.sd2-frame * {
-  border-radius: 0 !important;
-  box-shadow: none !important;
+.slidedeck-frame.show-overlay-hover .slidedeck-overlays {
+  display: none;
 }
-.lens-tool-kit.sd2-frame .sd-wrapper {
-  background: none !important;
-  padding: 0 !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-}
-.lens-tool-kit.sd2-frame .slidedeck {
-  border: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-.lens-tool-kit.sd2-dark .slidedeck dd {
+.lens-edtech-lens .slidedeck dd {
   height: 438px;
 }
-.lens-tool-kit.sd2-frame .slide-outer {
+.lens-edtech-lens .slide-outer {
   position: relative;
   height: 438px;
 }
-.lens-tool-kit.sd2-frame .slide-outer img {
+.lens-edtech-lens .slide-outer img {
 
 }
-.lens-tool-kit.sd2-frame .slide-inner {
+.lens-edtech-lens .slide-inner {
   position: relative;
   max-width: 940px;
   margin: -438px auto 0;
   padding: 125px 0 0 30px;
 }
-.lens-tool-kit.sd2-frame .slide-header {
+.lens-edtech-lens .slide-header {
   font-family: "Archer-Bold";
   font-size: 32px;
   color: #444;
   margin: 0 0 5px;
 }
-.lens-tool-kit.sd2-frame .slide-subheader {
+.lens-edtech-lens .slide-subheader {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   color: #4bd933;
   margin: 0 0 5px;
 }
-.lens-tool-kit.sd2-frame .slide-text {
+.lens-edtech-lens .slide-text {
   font-family: "Archer-Bold";
   font-size: 21px;
   width: 340px;
   margin: 0 0 10px;
   line-height: 26px;
 }
-.lens-tool-kit.sd2-frame .slide-text strong {
+.lens-edtech-lens .slide-text strong {
   color: #170bb5;
 }
-.lens-tool-kit.sd2-frame .more-link a {
+.lens-edtech-lens .more-link a {
   display: inline-block;
-  background: #170bb5 url(images/arrow-white.png) no-repeat 94% 50%;
+  background: #170bb5 url(/wp-content/themes/edtech/images/arrow-white.png) no-repeat 94% 50%;
   padding: 0 30px 0 10px;
   font-size: 12px;
   font-weight: bold;
@@ -567,19 +557,18 @@ Slides
   color: #fff;
 }
 
-.lens-tool-kit.sd2-dark dd.slide_2 .slide-inner {
+.lens-edtech-lens dd.slide_2 .slide-inner {
   padding: 55px 0 0 560px;
 }
-.lens-tool-kit.sd2-frame dd.slide_2 .slide-text {
+.lens-edtech-lens dd.slide_2 .slide-text {
   width: 360px;
 }
-.lens-tool-kit.sd2-dark dd.slide_3 .slide-inner {
+.lens-edtech-lens dd.slide_3 .slide-inner {
   padding: 80px 0 0 455px;
 }
-.lens-tool-kit.sd2-frame dd.slide_3 .slide-text {
+.lens-edtech-lens dd.slide_3 .slide-text {
   width: 360px;
 }
-
 
 body.home #content-top {
   padding: 40px 0 0;
@@ -1083,4 +1072,222 @@ form.form-become-member .field-eligible .gfield_description {
 }
 form.form-become-member input.datepicker {
   width: 99.2% !important;
+}
+
+
+
+@media all and (max-width: 940px) { /* TABLET ------------------------------------------------------TABLET------*/
+  .wrap,
+  .home-subheader .textwidget,
+  .home-subheader h3,
+  body.home .block-online-banking,
+  .lens-edtech-lens .slide-inner,
+  #subheader .widget h3 {
+    max-width: 96%;
+  }
+  .main-menu {
+    right: 120px;
+  }
+  .main-menu ul.dropdown li {
+    padding: 0 0 0 10px;
+  }
+
+/*
+* Footer
+*/
+  .footer-hours,
+  .footer-security,
+  .footer-posts {
+    width: 27%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .footer-security {
+    margin: 0 8% 30px 8%;
+  }
+  .footer-social {
+    width: auto;
+    float: none;
+    clear: both;
+  }
+  .footer-social h3 {
+    float: left;
+    height: 33px;
+    line-height: 33px;
+  }
+  .footer-social .textwidget {
+    float: left;
+  }
+  ul.social-icons {
+    float: left;
+  }
+  ul.social-icons li {
+    margin-left: 40px;
+    float: left;
+  }
+  #footer-bottom .textwidget {
+    padding-right: 240px;
+  }
+  .footer-address {}
+
+  .layout-2c-r .content {
+    margin-left: 330px;
+  }
+
+
+  form.form-become-member .field-eligible .gfield_description {
+    width: 100px;
+  }
+  form.form-become-member .field-eligible ul.gfield_radio,
+  form.form-become-member .field-self-employed ul.gfield_radio {
+    margin: 0 20px 0 0 !important;
+  }
+
+  .home-low-rates,
+  .home-membership,
+  .home-loan {
+    padding: 10px;
+  }
+  .home-low-rates h3,
+  .home-membership h3,
+  .home-loan h3 {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+  body.home .content,
+  body.home .sidebar {
+    width: 100%;
+    margin: 0;
+  }
+  body.home .slidedeck2_widget {
+    background: url(images/bg-home-clouds.jpg) no-repeat 50% 0;
+    height: 325px;
+  }
+  .lens-edtech-lens .slidedeck dd {
+    height: 325px;
+  }
+  .lens-edtech-lens .slide-outer {
+    position: relative;
+    height: 325px;
+  }
+  .lens-edtech-lens .slide-outer img {
+    display: none;
+  }
+  .lens-edtech-lens .slide-inner {
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 0 0 335px !important;
+  }
+  .lens-edtech-lens .slide-header {
+    font-size: 28px;
+  }
+  .lens-edtech-lens .slide-subheader {
+    font-size: 12px;
+  }
+  .lens-edtech-lens .slide-text {
+    font-size: 18px;
+    width: 330px !important;
+  }
+  .lens-edtech-lens .more-link a {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 576px) { /* MOBILE ------------------------------------------------------MOBILE------*/
+  #header #search-2,
+  body.home .block-online-banking {
+    display: none;
+  }
+
+  .content,
+  .sidebar {
+    width: 100%;
+    margin: 0;
+  }
+  body.home .slidedeck2_widget {
+    height: 175px;
+  }
+  .lens-edtech-lens .slidedeck dd {
+    height: 175px;
+  }
+  .lens-edtech-lens .slide-outer {
+    position: relative;
+    height: 175px;
+  }
+  .lens-edtech-lens .slide-outer img,
+  .lens-edtech-lens .slide-text {
+    display: none;
+  }
+  .lens-edtech-lens .slide-inner {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0 0 30px !important;
+  }
+  .lens-edtech-lens .slide-header {
+    font-size: 28px;
+  }
+  .lens-edtech-lens .slide-subheader {
+    font-size: 12px;
+  }
+  .lens-edtech-lens .slide-text {
+    font-size: 18px;
+    width: 330px !important;
+  }
+  .lens-edtech-lens .more-link a {
+    font-size: 12px;
+  }
+  .home-low-rates,
+  .home-membership,
+  .home-loan {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    margin: 0 0 10px;
+  }
+/*
+* Footer
+*/
+  .footer-hours,
+  .footer-security,
+  .footer-posts {
+    width: 100%;
+  }
+  .footer-security {
+    margin: 0 0 20px;
+  }
+  .footer-directions,
+  .footer-hours-text {
+    width: 45%;
+    margin-right: 10%;
+    float: left;
+    padding: 0;
+  }
+  .footer-directions {
+    width: 45%;
+    margin-right: 0;
+  }
+  .footer-social {
+    width: auto;
+    float: none;
+    clear: both;
+  }
+  .footer-social h3 {
+    float: left;
+    height: 33px;
+    line-height: 33px;
+  }
+  .footer-social .textwidget {
+    float: left;
+  }
+  ul.social-icons {
+    float: left;
+  }
+  ul.social-icons li {
+    margin-left: 20px;
+    height: 33px;
+    width: 33px;
+    overflow: hidden;
+  }
+  #footer-bottom .textwidget {
+    padding-right: 240px;
+  }
 }
