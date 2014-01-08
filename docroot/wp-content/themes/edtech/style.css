@@ -56,6 +56,7 @@ a {
 Header
 ---------------------------------------------------------------------------------------------------- */
 #header {
+  position: relative;
   background: #fff;
   border-bottom: 2px solid #3377be;
   height: 110px;
@@ -444,7 +445,7 @@ Home
 .home-subheader {
   background: url(images/bg-home-subheader.png) repeat-x;
   height: 105px;
-  margin-top: -111px;
+  margin-top: -105px;
   position: relative;
   z-index: 100;
   padding: 20px 0 0;
@@ -516,7 +517,7 @@ body.home .slidedeck2_widget {
   height: 438px;
 }
 .lens-edtech-lens .slide-outer img {
-
+  max-width: inherit;
 }
 .lens-edtech-lens .slide-inner {
   position: relative;
@@ -1154,6 +1155,11 @@ form.form-become-member input.datepicker {
     white-space: nowrap;
     font-size: 16px;
   }
+  .home-low-rates .more-link a,
+  .home-membership .more-link a,
+  .home-loan .more-link a {
+    left: 10px;
+  }
   body.home .content,
   body.home .sidebar {
     width: 100%;
@@ -1197,21 +1203,44 @@ form.form-become-member input.datepicker {
   body.home .block-online-banking {
     display: none;
   }
-
+  #header .logo a {
+    height: 30px;
+  }
+  #header .logo a {
+    height: 61px;
+    width: 135px;
+    background-size: contain;
+  }
+  .main-menu {
+    top: 92px;
+    right: 0;
+    width: 100%;
+  }
+  .home-subheader {
+    height: 72px;
+    margin-top: 0;
+    padding: 12px 0 0;
+  }
+  .home-subheader .textwidget {
+    font-size: 14px;
+  }
+  .home-subheader h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  body.home #content-top {
+    padding: 20px 0 0;
+  }
   .content,
   .sidebar {
     width: 100%;
     margin: 0;
   }
-  body.home .slidedeck2_widget {
-    height: 175px;
-  }
-  .lens-edtech-lens .slidedeck dd {
-    height: 175px;
-  }
+  body.home .slidedeck2_widget,
+  .lens-edtech-lens .slidedeck dd,
   .lens-edtech-lens .slide-outer {
     position: relative;
-    height: 175px;
+    height: 100px;
   }
   .lens-edtech-lens .slide-outer img,
   .lens-edtech-lens .slide-text {
@@ -1220,7 +1249,7 @@ form.form-become-member input.datepicker {
   .lens-edtech-lens .slide-inner {
     position: relative;
     margin: 0 auto;
-    padding: 10px 0 0 30px !important;
+    padding: 10px 0 0 0px !important;
   }
   .lens-edtech-lens .slide-header {
     font-size: 28px;
@@ -1242,6 +1271,25 @@ form.form-become-member input.datepicker {
     max-width: 100%;
     float: none;
     margin: 0 0 10px;
+  }
+  .home-membership,
+  .home-loan {
+    height: 186px;
+  }
+  .home-low-rates h3,
+  .home-membership h3,
+  .home-loan h3 {
+    font-size: 20px;
+    margin: 0 0 10px
+  }
+  .home-membership h3,
+  .home-loan h3 {
+    margin: 0 0 25px
+  }
+  .home-low-rates .more-link a,
+  .home-membership .more-link a,
+  .home-loan .more-link a {
+    left: 10px;
   }
 /*
 * Footer
