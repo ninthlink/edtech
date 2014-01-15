@@ -1094,6 +1094,12 @@ form.form-apply-loan input.datepicker {
 /*
 * Apply for a loan form
 */
+
+body.apply-for-a-loan h1.entry-title,
+body.apply-for-a-loan-2 h1.entry-title {
+  background: url(images/icon-apply-loan.png) no-repeat;
+  padding-left: 40px;
+}
 form.form-apply-loan .field-gross-income,
 form.form-apply-loan .field-gross-income input[type="text"] {
   width: 60% !important;
