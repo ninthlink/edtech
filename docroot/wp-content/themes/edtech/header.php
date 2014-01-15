@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html <?php language_attributes( 'html' ); ?>>
 <head>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
 <?php wp_head(); // Hook required for scripts, styles, and other <head> items. ?>
 </head>
 

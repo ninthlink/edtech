@@ -1243,16 +1243,17 @@ form.form-apply-loan .field-gross-income-period {
   }
 }
 @media all and (max-width: 576px) { /* MOBILE ------------------------------------------------------MOBILE------*/
+  h1,
+  h1.entry-title {
+    font-size: 18px;
+  }
   #header #search-2,
   body.home .block-online-banking {
     display: none;
   }
   #header .logo a {
-    height: 30px;
-  }
-  #header .logo a {
-    height: 61px;
-    width: 135px;
+    height: 40px;
+    width: 90px;
     background-size: contain;
   }
   .main-menu {
@@ -1260,17 +1261,44 @@ form.form-apply-loan .field-gross-income-period {
     right: 0;
     width: 100%;
   }
+
+  #header #nav_menu-2 ul li {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    white-space: nowrap;
+    font-size: 9px;
+  }
+  #header #nav_menu-2 ul li.link-security {
+    top: 40px;
+    right: 113px;
+    border: 1px solid #D8D8D9;
+  }
+  #header #nav_menu-2 ul li.link-contact {
+    top: 40px;
+    right: 18px;
+    border: 1px solid #D8D8D9;
+  }
+  #header #nav_menu-2 ul li.link-online-banking {
+    right: 99px;
+  }
+  #header #nav_menu-2 ul li.link-online-banking a,
+  #header #nav_menu-2 ul li.link-become-member a {
+    padding: 0 9px;
+  }
+
+
   .home-subheader {
-    height: 72px;
+    height: 50px;
     margin-top: 0;
-    padding: 12px 0 0;
+    padding: 8px 0 0;
   }
   .home-subheader .textwidget {
-    font-size: 14px;
+    font-size: 12px;
   }
   .home-subheader h3 {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 18px;
   }
   body.home #content-top {
     padding: 20px 0 0;
@@ -1296,7 +1324,7 @@ form.form-apply-loan .field-gross-income-period {
     padding: 10px 0 0 0px !important;
   }
   .lens-edtech-lens .slide-header {
-    font-size: 28px;
+    font-size: 18px;
   }
   .lens-edtech-lens .slide-subheader {
     font-size: 12px;
@@ -1326,15 +1354,42 @@ form.form-apply-loan .field-gross-income-period {
     font-size: 20px;
     margin: 0 0 10px
   }
-  .home-membership h3,
-  .home-loan h3 {
-    margin: 0 0 25px
-  }
   .home-low-rates .more-link a,
   .home-membership .more-link a,
   .home-loan .more-link a {
     left: 10px;
   }
+
+  .home-newsletter {}
+  .home-newsletter h4 {}
+  .home-newsletter .textwidget {
+    padding: 10px;
+  }
+  .home-newsletter h2 {
+  }
+  .home-newsletter p {
+    display: none;
+  }
+  .home-newsletter #mc_embed_signup form {
+    padding: 0;
+  }
+  .home-newsletter #mc_embed_signup .mc-field-group {
+    padding: 0;
+    min-height: auto;
+  }
+  .home-newsletter #mc_embed_signup .mc-field-group {
+    display: inline-block;
+    margin-right: 5px;
+    width: 30%;
+  }
+  .home-newsletter #mc_embed_signup .mc-field-group input {
+  }
+  .home-newsletter #mc_embed_signup .form-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 /*
 * Footer
 */
@@ -1379,7 +1434,14 @@ form.form-apply-loan .field-gross-income-period {
     width: 33px;
     overflow: hidden;
   }
-  #footer-bottom .textwidget {
-    padding-right: 240px;
+  #footer-bottom {
+    font-size: 10px;
   }
-}
+  #footer-bottom .textwidget {
+    padding-right: 0;
+  }
+  #footer-bottom .wrap  {
+    background: url(images/img-footer-logos.png) no-repeat bottom left;
+    min-height: 200px;
+  }
+} /* end: mobile */
