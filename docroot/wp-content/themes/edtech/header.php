@@ -4,6 +4,26 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
 <?php wp_head(); // Hook required for scripts, styles, and other <head> items. ?>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('.responsive-menu');
+        menuHeight  = menu.height();
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
 </head>
 
 <body <?php body_class(); ?> <?php omega_attr( 'body' ); ?>>

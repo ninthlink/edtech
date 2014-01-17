@@ -59,7 +59,10 @@ Header
   position: relative;
   background: #fff;
   border-bottom: 2px solid #3377be;
-  height: 110px;
+  min-height: 110px;
+}
+#header .wrap {
+  min-height: 110px;
 }
 #header .logo {
   position: absolute;
@@ -1242,7 +1245,7 @@ form.form-apply-loan .field-gross-income-period {
     font-size: 12px;
   }
 }
-@media all and (max-width: 576px) { /* MOBILE ------------------------------------------------------MOBILE------*/
+@media all and (max-width: 600px) { /* MOBILE ------------------------------------------------------MOBILE------*/
   h1,
   h1.entry-title {
     font-size: 18px;
@@ -1445,3 +1448,79 @@ form.form-apply-loan .field-gross-income-period {
     min-height: 200px;
   }
 } /* end: mobile */
+
+
+.menu-responsive a#pull {
+  display: none;
+}
+.responsive-menu {
+  display: none;
+  margin-top: 110px !important;
+}
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+
+  #menu-main-menu {
+    display: none;
+  }
+  .menu-responsive a#pull {
+    display: block;
+    background: #2d21bb;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    width: 104%;
+    height: 38px;
+    line-height: 38px;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    margin: 0 -2%;
+  }
+  .menu-responsive a#pull span {
+    background: url(images/arrow-white-down.png) no-repeat 100% 50%;
+    padding-right: 15px;
+  }
+  .responsive-menu {
+    display: none;
+    height: auto;
+    margin: 0 -2%;
+    width: 104%;
+  }
+  .responsive-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #2d21bb;
+  }
+  .responsive-menu ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    border-top: 1px solid #405bd7;
+  }
+  .responsive-menu ul li a {
+    color: #fff;
+    padding: 6px 10px;
+    display: block;
+  }
+  .responsive-menu ul li li {
+    text-transform: none;
+    font-weight: normal;
+  }
+  .responsive-menu ul li li a {
+    padding: 6px 20px;
+  }
+
+
+
+
+
+
+
+}
