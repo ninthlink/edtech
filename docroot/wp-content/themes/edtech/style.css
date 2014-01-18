@@ -789,7 +789,7 @@ Subheader
   border: 1px solid #d8d8d8;
   border-color: #c0c0c0 #d8d8d8 #d8d8d8 #c0c0c0;
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
-  width: 160px;
+  max-width: 160px;
   font-size: 12px;
   float: left;
   margin-right: 10px;
@@ -1156,7 +1156,7 @@ body.online-banking-login .block-online-banking h4.form-title {
   font-weight: bold;
 }
 body.online-banking-login .block-online-banking form input.form-input {
-  width: 225px;
+  max-width: 225px;
 }
 body.online-banking-login .block-online-banking form input.form-submit {
   color: #fff;
