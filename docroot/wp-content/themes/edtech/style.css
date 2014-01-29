@@ -934,6 +934,12 @@ Content
   border-width: 0 1px 1px 0;
   font-size: 12px;
 }
+#content table.table-resources td {
+  border: 0;
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+}
 #content table td a {
   font-weight: bold;
   text-decoration: underline;
