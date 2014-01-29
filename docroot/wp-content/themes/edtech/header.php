@@ -50,7 +50,7 @@
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Content Top')) : endif; ?>
     </div>
   </div>
-
+<div class="featured-image"><?php the_post_thumbnail( $size, $attr ); ?></div>
   <div id="subheader">
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Subheader')) : endif; ?>
   </div>

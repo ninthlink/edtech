@@ -230,7 +230,7 @@ table caption {
 }
 
 th,td {
-  padding: 10px;
+  padding: 5px 10px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -401,7 +401,7 @@ Structure and Layout
 
 .layout-2c-r .content {
   float: right;
-  margin-left: 370px;
+  width: 570px;
 }
 
 .layout-2c-l .content {
@@ -426,7 +426,6 @@ Structure and Layout
 
 .layout-2c-r .sidebar-primary {
   float: left;
-  margin-right: -300px;
 }
 
 /* WordPress

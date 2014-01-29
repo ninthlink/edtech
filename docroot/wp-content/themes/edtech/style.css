@@ -44,6 +44,7 @@ h3 {
 }
 h4 {
   font-size: 16px;
+  color: #170BB5;
 }
 a {
   color: #170BB5;
@@ -110,6 +111,10 @@ Site Navigation
   z-index: 600;
   position: relative;
 }
+.main-menu ul.dropdown li.current_page_item a {
+  color: #170BB5;
+}
+
 .main-menu ul.dropdown li a:hover,
 .main-menu ul.dropdown li:hover > a {
   background: #f9f7f4;
@@ -984,6 +989,9 @@ h3.icon-lock {
   background: url(images/arrow-white.png) no-repeat 94% 50%;
   color: #fff;
 }
+.button-link a:hover {
+  background: #2d22bb url(images/arrow-white.png) no-repeat 94% 50%;
+}
 .button,
 #submit {
   font-weight: bold;
@@ -1222,7 +1230,7 @@ body.online-banking-login .block-online-banking .login-links a {
   .footer-address {}
 
   .layout-2c-r .content {
-    margin-left: 330px;
+    width: 400px;
   }
 
 
@@ -1349,10 +1357,11 @@ body.online-banking-login .block-online-banking .login-links a {
   body.home #content-top {
     padding: 20px 0 0;
   }
-  .content,
-  .sidebar {
+  .layout-2c-r .content,
+  .layout-2c-r .sidebar {
     width: 100%;
     margin: 0;
+    float: none;
   }
   body.home .slidedeck2_widget,
   .lens-edtech-lens .slidedeck dd,
@@ -1561,9 +1570,9 @@ body.online-banking-login .block-online-banking .login-links a {
   }
 
 
-
-
-
-
-
+}
+.featured-image {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
 }
