@@ -938,7 +938,11 @@ Content
   border: 0;
   padding: 0;
   vertical-align: top;
-  text-align: center;
+}
+#content table.table-resources td h3 {
+  padding: 20px 0 0;
+  margin: 20px 0 0;
+  border-top: 1px solid #d8d8d8;
 }
 #content table td a {
   font-weight: bold;
