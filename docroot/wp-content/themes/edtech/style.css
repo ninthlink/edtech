@@ -16,7 +16,7 @@
   margin: 0 auto;
 }
 .site-inner {
-  padding: 45px 0 0;
+  padding: 25px 0 0;
 }
 
 body {
@@ -78,7 +78,13 @@ Header
   text-indent: -9999px;
   overflow: hidden;
 }
-
+.breadcrumbs {
+  position: relative;
+  max-width: 940px;
+  margin: 0 auto;
+  font-size: 11px;
+  padding: 20px 0 0
+}
 /*
 Site Navigation
 ----------------------------------------------------------------------------------------------------*/
@@ -868,6 +874,7 @@ article.post .social-links {
   border: 1px solid #d2d2d2;
   border-width: 1px 0;
   padding: 15px 10px;
+  position: relative;
 }
 article.post .social-links .label {
   display: inline-block;
@@ -881,8 +888,24 @@ article.post .social-links .label {
 }
 article.post .social-links a {
   display: inline-block;
-  float: left;
   margin-bottom: 0;
+  width: 23px;
+  height: 23px;
+  background: url(images/icon-social-posts.png);
+  position: absolute;
+  top: 15px;
+  left: 65px;
+}
+article.post .social-links a.synved-social-provider-facebook {
+  background: url(images/icon-social-posts.png) 0 -23px;
+  left: 95px;
+}
+article.post .social-links a.synved-social-provider-twitter {
+  background: url(images/icon-social-posts.png) 0 -46px;
+  left: 125px;
+}
+article.post .social-links a img {
+  display: none !important;
 }
 article.post .entry-footer {
   display: none;

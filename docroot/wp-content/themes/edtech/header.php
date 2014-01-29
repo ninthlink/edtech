@@ -55,7 +55,12 @@
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Subheader')) : endif; ?>
   </div>
 
-
+<div class="breadcrumbs">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>
   <div class="site-inner">
 
     <?php omega_do_atomic( 'before_main' ); // omega_before_main ?>
