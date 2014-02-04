@@ -1665,3 +1665,13 @@ body.newsletter-sign-up #mc_embed_signup .button {
   border: 1px solid #1c69b8;
   margin-top: 5px;
 }
+
+form.form-pre-apply .gform_footer,
+form.form-pre-apply .field-joint .ginput_container,
+form.form-pre-apply .field-single .ginput_container {
+  display: none;
+}
+form.form-pre-apply .field-yes-no li {
+  float: left;
+  margin-right: 20px;
+}
