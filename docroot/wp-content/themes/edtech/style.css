@@ -16,7 +16,7 @@
   margin: 0 auto;
 }
 .site-inner {
-  padding: 25px 0 0;
+  padding: 15px 0 0;
 }
 
 body {
@@ -82,8 +82,14 @@ Header
   position: relative;
   max-width: 940px;
   margin: 0 auto;
-  font-size: 11px;
-  padding: 20px 0 0
+  font-size: 12px;
+  padding: 15px 0 0;
+  color: #585143;
+  font-weight: bold;
+}
+.breadcrumbs a {
+  color: #585143;
+  font-weight: normal;
 }
 /*
 Site Navigation
@@ -1608,4 +1614,30 @@ body.online-banking-login .block-online-banking .login-links a {
   text-align: center;
   width: 100%;
   overflow: hidden;
+}
+
+body.newsletter-sign-up #mc_embed_signup form {
+  padding: 0;
+}
+body.newsletter-sign-up p {
+  margin: 0 0 10px;
+}
+body.newsletter-sign-up #mc_embed_signup .mc-field-group {
+  padding: 0 0 5px;
+  max-width: 340px;
+  min-height: 100%;
+}
+body.newsletter-sign-up #mc_embed_signup .mc-field-group input {
+  padding: 6px 0;
+  border: 1px solid #bababa;
+  border-color: #bababa #ddd #ddd #bababa;
+  font-size: 11px;
+}
+body.newsletter-sign-up #mc_embed_signup .button {
+  border-radius: 0;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #1c69b8;
+  margin-top: 5px;
 }
