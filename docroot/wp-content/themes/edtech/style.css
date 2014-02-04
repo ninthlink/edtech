@@ -861,7 +861,9 @@ Announcements
   color: #666;
 }
 
-article.post {}
+article.post {
+  position: relative;
+}
 article.post h1.entry-title {
   font-size: 24px;
   color: #585143;
@@ -916,6 +918,15 @@ article.post .social-links a img {
 article.post .entry-footer {
   display: none;
 }
+#fcbk_share {
+  position: absolute;
+  bottom: 7px;
+  left: 166px;
+  padding: 12px 20px;
+  border-left: 1px solid #ccc;
+  z-index: 100;
+}
+
 #comments,
 #respond {
   background: none;
