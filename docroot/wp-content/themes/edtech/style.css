@@ -813,13 +813,14 @@ Subheader
 }
 .block-online-banking form input.form-submit {
   float: left;
-  padding: 8px 0;
+  padding: 7px 0;
   width: 70px;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
   color: #2d22bb;
   background: #fff;
+  border: 1px solid #1c69b8;
 }
 .block-online-banking .login-links {
   font-size: 10px;
@@ -1042,6 +1043,7 @@ h3.icon-lock {
   padding: 0 30px 0 10px;
   background: url(images/arrow-white.png) no-repeat 94% 50%;
   color: #fff;
+  border: 1px solid #1c69b8;
 }
 .button-link a:hover {
   background: #2d22bb url(images/arrow-white.png) no-repeat 94% 50%;
@@ -1191,11 +1193,10 @@ form.form-apply-loan .field-gross-income-period {
 body.online-banking-login .sidebar-primary {
   border-right: 1px solid #bbb;
   width: 370px;
-  padding: 0 30px 70px 0;
-  margin-right: -370px;
+  padding: 0 30px 30px 0;
 }
 body.online-banking-login .content {
-  margin-left: 420px;
+  max-width: 520px;
 }
 body.online-banking-login .block-online-banking {
   background: none;
@@ -1208,21 +1209,24 @@ body.online-banking-login .block-online-banking .widget-wrap {
 body.online-banking-login .block-online-banking h4 {
   display: block;
   font-size: 28px;
+  color: #585143;
 }
 body.online-banking-login .block-online-banking h4.form-title {
   display: block;
   font-family: arial;
   color: #2d21bb;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
 }
 body.online-banking-login .block-online-banking form input.form-input {
+  width: 225px;
   max-width: 225px;
 }
 body.online-banking-login .block-online-banking form input.form-submit {
   color: #fff;
   background: #2d22bb;
+  border: 1px solid #1c69b8;
 }
 body.online-banking-login .block-online-banking .login-links a {
   color: #2d22bb;
@@ -1349,6 +1353,7 @@ body.online-banking-login .block-online-banking .login-links a {
   .lens-edtech-lens .more-link a {
     font-size: 12px;
   }
+
 }
 @media all and (max-width: 600px) { /* MOBILE ------------------------------------------------------MOBILE------*/
   h1,
@@ -1553,6 +1558,10 @@ body.online-banking-login .block-online-banking .login-links a {
     background: url(images/img-footer-logos.png) no-repeat bottom left;
     min-height: 200px;
   }
+  body.online-banking-login .sidebar-primary,
+  body.online-banking-login .content {
+    width: 100%;
+  }
 } /* end: mobile */
 
 
@@ -1623,8 +1632,8 @@ body.online-banking-login .block-online-banking .login-links a {
     padding: 6px 20px;
   }
 
-
 }
+
 .featured-image {
   text-align: center;
   width: 100%;
