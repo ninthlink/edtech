@@ -919,12 +919,16 @@ article.post .entry-footer {
   display: none;
 }
 #fcbk_share {
+  display: none;
   position: absolute;
   bottom: 7px;
   left: 166px;
   padding: 12px 20px;
   border-left: 1px solid #ccc;
   z-index: 100;
+}
+body.announcements #fcbk_share {
+  display: block;
 }
 
 #comments,
