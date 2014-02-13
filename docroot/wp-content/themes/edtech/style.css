@@ -98,7 +98,7 @@ Site Navigation
   position: absolute;
   top: 68px;
   right: 170px;
-  z-index: 100;
+  z-index: 101;
 }
 .main-menu ul.dropdown li {
   font-size: 12px;
@@ -1638,6 +1638,9 @@ body.online-banking-login .block-online-banking .login-links a {
   text-align: center;
   width: 100%;
   overflow: hidden;
+}
+.featured-image img {
+  display: table;
 }
 
 body.newsletter-sign-up #mc_embed_signup form {
