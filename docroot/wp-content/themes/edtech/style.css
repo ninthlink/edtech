@@ -981,8 +981,9 @@ Content
 }
 #content table.table-resources td {
   border: 0;
-  padding: 0;
+  padding: 0 0 10px;
   vertical-align: top;
+  line-height: 130%;
 }
 #content table.table-resources td h3 {
   padding: 20px 0 10px;
