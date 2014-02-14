@@ -580,7 +580,7 @@ body.home .slidedeck2_widget {
   text-transform: uppercase;
   color: #fff;
 }
-
+/*
 .lens-edtech-lens dd.slide_2 .slide-inner {
   padding: 55px 0 0 560px;
 }
@@ -591,6 +591,13 @@ body.home .slidedeck2_widget {
   padding: 80px 0 0 455px;
 }
 .lens-edtech-lens dd.slide_3 .slide-text {
+  width: 360px;
+}*/
+
+.lens-edtech-lens .right .slide-inner {
+  padding: 55px 0 0 560px;
+}
+.lens-edtech-lens .right .slide-text {
   width: 360px;
 }
 
@@ -1714,4 +1721,64 @@ form.form-pre-apply .field-yes-no li {
 
 body.faqs .entry-content small {
   display: none;
+}
+
+.menu-accordion {
+  border-top: 4px solid #4bd933;
+  font-family: "Archer-Bold";
+  background: #f8f8f8;
+}
+.menu-accordion dt.level1 {
+  display: none !important;
+}
+.menu-accordion dl.level1 .outer,
+.menu-accordion dl.level2 .outer,
+.menu-accordion dl.level1 .inner,
+.menu-accordion dl.level2 .inner {
+  background: none !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.menu-accordion dt.level2 {
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  border-bottom: 1px solid #e1e1e1 !important;
+  margin: 0 !important;
+  font-family: "Archer-Bold" !important;
+}
+.menu-accordion dt.level2.last {
+  border-bottom: 0 !important;
+}
+.menu-accordion dt.level2 a {
+  display: block !important;
+  padding: 20px 15px !important;
+  color: #4bd933 !important;
+  padding: 10px 0 15px !important;
+}
+.menu-accordion dt.level2 a:hover,
+.menu-accordion dt.level2.active a {
+  background: #fff !important;
+}
+
+.sidebar ul.menu ul.sub-menu {
+}
+.sidebar ul.menu li.current_page_item ul.sub-menu {
+  background: #fff;
+}
+.sidebar ul.menu li ul.sub-menu li {
+  text-transform: none;
+  font-size: 13px;
+  line-height: 13px;
+  border-bottom: 0;
+}
+.sidebar ul.menu li ul.sub-menu li a {
+  padding: 5px 15px;
+  color: #666;
+}
+.sidebar ul.menu li ul.sub-menu a:hover,
+.sidebar ul.menu li ul.sub-menu li.current_page_item a {
+  color: #000;
+  background: #fff;
 }
