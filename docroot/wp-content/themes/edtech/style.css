@@ -91,6 +91,9 @@ Header
   color: #585143;
   font-weight: normal;
 }
+body.home .breadcrumbs {
+  display: none;
+}
 /*
 Site Navigation
 ----------------------------------------------------------------------------------------------------*/
