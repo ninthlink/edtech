@@ -985,6 +985,10 @@ Content
   vertical-align: top;
   line-height: 130%;
 }
+body.our-team-2 #content table.table-resources td,
+body.our-team #content table.table-resources td {
+}
+
 #content table.table-resources td h3 {
   padding: 20px 0 10px;
   margin: 20px 0 0;
@@ -1678,4 +1682,33 @@ form.form-pre-apply .field-single .ginput_container {
 form.form-pre-apply .field-yes-no li {
   float: left;
   margin-right: 20px;
+}
+
+#odd-faq,
+#odd-faq .odd-faq-question,
+#odd-faq .odd-faq-answer {
+  width: auto;
+  border: 0;
+  float: none;
+}
+#odd-faq {
+  margin: 0 0 20px;
+}
+#odd-faq .odd-faq-question {
+  font: inherit;
+  padding: 0;
+  margin: 0 0 10px;
+  color: #170BB5;
+  background: none;
+  font-weight: bold;
+}
+#odd-faq .odd-faq-answer {
+  font: inherit;
+  padding: 0;
+  margin: 0 0 20px;
+  color: inherit;
+}
+
+body.faqs .entry-content small {
+  display: none;
 }
