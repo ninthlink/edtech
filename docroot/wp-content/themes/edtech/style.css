@@ -1205,28 +1205,34 @@ form.form-apply-loan .field-gross-income-period {
 }
 
 
-body.online-banking-login .sidebar-primary {
+body.online-banking-login .sidebar-primary,
+body.e-statements .sidebar-primary {
   border-right: 1px solid #bbb;
   width: 370px;
   padding: 0 30px 30px 0;
 }
-body.online-banking-login .content {
+body.online-banking-login .content,
+body.e-statements .content {
   max-width: 520px;
 }
-body.online-banking-login .block-online-banking {
+body.online-banking-login .block-online-banking,
+body.e-statements .block-online-banking {
   background: none;
 }
-body.online-banking-login .block-online-banking .widget-wrap {
+body.online-banking-login .block-online-banking .widget-wrap,
+body.e-statements .block-online-banking .widget-wrap {
   background: url("images/icon-lock.png") no-repeat scroll 100% 64% rgba(0, 0, 0, 0);
   padding: 0 30px 0 0;
 }
 
-body.online-banking-login .block-online-banking h4 {
+body.online-banking-login .block-online-banking h4,
+body.e-statements .block-online-banking h4 {
   display: block;
   font-size: 28px;
   color: #585143;
 }
-body.online-banking-login .block-online-banking h4.form-title {
+body.online-banking-login .block-online-banking h4.form-title,
+body.e-statements .block-online-banking h4.form-title {
   display: block;
   font-family: arial;
   color: #2d21bb;
@@ -1234,16 +1240,19 @@ body.online-banking-login .block-online-banking h4.form-title {
   text-transform: uppercase;
   font-weight: bold;
 }
-body.online-banking-login .block-online-banking form input.form-input {
+body.online-banking-login .block-online-banking form input.form-input,
+body.e-statements .block-online-banking form input.form-input {
   width: 225px;
   max-width: 225px;
 }
-body.online-banking-login .block-online-banking form input.form-submit {
+body.online-banking-login .block-online-banking form input.form-submit,
+body.e-statements .block-online-banking form input.form-submit {
   color: #fff;
   background: #2d22bb;
   border: 1px solid #1c69b8;
 }
-body.online-banking-login .block-online-banking .login-links a {
+body.online-banking-login .block-online-banking .login-links a,
+body.e-statements .block-online-banking .login-links a {
   color: #2d22bb;
 }
 
@@ -1574,7 +1583,9 @@ body.online-banking-login .block-online-banking .login-links a {
     min-height: 200px;
   }
   body.online-banking-login .sidebar-primary,
-  body.online-banking-login .content {
+  body.online-banking-login .content,
+  body.e-statements .sidebar-primary,
+  body.e-statements .content {
     width: 100%;
   }
 } /* end: mobile */
