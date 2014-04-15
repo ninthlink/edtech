@@ -894,6 +894,7 @@ article.post .social-links {
   border-width: 1px 0;
   padding: 15px 10px;
   position: relative;
+  clear: both;
 }
 article.post .social-links .label {
   display: inline-block;
